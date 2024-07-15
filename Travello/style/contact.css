@@ -1,0 +1,86 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('../assets/pexels-muffin-creatives-2468773.jpg');
+background-size: cover;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav a {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Add padding */
+    overflow: hidden; /* Hide overflow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for background color and box shadow */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background color on hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Subtle shadow on hover */
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+form {
+    display: flex;
+flex-direction: column;
+
+border: 2px solid white;
+padding: 20px;
+width: 60%;
+margin: auto;
+background-color: #001b36;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+form:hover {
+    transform: translateY(-5px);
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: start;
+    font-weight: bold;
+    color: white;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+    background-color: #13083a;
+}
+footer {
+    background-color: #010101;
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+}

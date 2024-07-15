@@ -1,0 +1,104 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+.destination-header{
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('../assets/pexels-muffin-creatives-2468773.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+}
+.destination-nav a {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Add padding */
+    overflow: hidden; /* Hide overflow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for background color and box shadow */
+}
+
+.destination-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background color on hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Subtle shadow on hover */
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.search-container input[type=text] {
+    padding: 10px;
+    margin: 8px 0;
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid #333;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+.search-container button {
+    padding: 10px 20px;
+    background-color: brown;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensure proper wrapping on smaller screens */
+}
+.destination {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 0 0 calc(33.333% - 20px); /* Adjust the percentage as needed */
+    max-width: calc(33.333% - 20px); /* Adjust the width as needed */
+    display: flex;
+    flex-direction: column;
+}
+.destination img {
+    width: 100%;
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover;
+    border-radius: 8px;
+}
+.destination h3 {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #333;
+}
+.destination p {
+    color: #666;
+    flex-grow: 1;
+}
+.destination a {
+    display: inline-block;
+    background-color: brown;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    align-self: flex-end;
+    margin-top: 10px;
+}
+footer {
+    background-color: #010101;
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+}

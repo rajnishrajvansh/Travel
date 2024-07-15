@@ -1,0 +1,104 @@
+/* Styling for the entire body of the webpage */
+body {
+    font-family: Arial, sans-serif; /* Set font family */
+    background-color: #f1f1f1; /* Set background color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Styling for the header section containing offers */
+.offer-header {
+    color: #fff; /* Text color */
+    padding: 30px; /* Add padding */
+    text-align: center; /* Center-align text */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('../assets/pexels-muffin-creatives-2468773.jpg'); /* Background with gradient and image */
+    background-size: cover; /* Cover the entire area */
+    font-family: sans-serif; /* Set font family */
+}
+
+/* Styling for navigation links in the header */
+.offer-nav {
+    background-color: transparent; /* Transparent background */
+    color: #fff; /* Text color */
+    padding: 10px 0; /* Add padding */
+    text-align: center; /* Center-align text */
+}
+
+/* Styling for individual navigation links */
+.offer-nav a {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Add padding */
+    overflow: hidden; /* Hide overflow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for background color and box shadow */
+}
+
+.offer-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background color on hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Subtle shadow on hover */
+}
+
+
+/* Styling for the container of offer cards */
+.offer-container {
+    max-width: 1100px; /* Set maximum width */
+    margin: 20px auto; /* Center the container */
+    padding: 10px 10px; /* Add padding */
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    grid-gap: 50px; /* Add gap between cards */
+}
+
+/* Styling for individual offer cards */
+.offer-card {
+    background: linear-gradient(45deg, #4d755f, #f5f5f5); /* Background with gradient */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    transition: transform 0.3s ease; /* Smooth transition */
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Hover effect for offer cards */
+.offer-card:hover {
+    transform: translateY(-5px); /* Move card up slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow */
+}
+
+/* Styling for offer card titles */
+.offer-card h2 {
+    font-size: 24px; /* Set font size */
+    color: #333; /* Text color */
+    margin-bottom: 10px; /* Add margin */
+}
+
+/* Styling for offer card descriptions */
+.offer-card p {
+    color: #140f0f; /* Text color */
+}
+
+/* Styling for "Book Now" buttons */
+.offer-card a {
+    display: inline-block; /* Display as block */
+    background-color: brown; /* Background color */
+    color: #fff; /* Text color */
+    padding: 8px 16px; /* Add padding */
+    text-decoration: none; /* Remove underline */
+    border-radius: 4px; /* Rounded corners */
+    margin-top: 10px; /* Add margin */
+}
+
+/* Styling for footer */
+footer {
+    background-color: #010101; /* Background color */
+    font-family: sans-serif; /* Set font family */
+    color: #fff; /* Text color */
+    text-align: center; /* Center-align text */
+    padding: 20px 0; /* Add padding */
+    bottom: 0; /* Stick to bottom */
+    width: 100%; /* Full width */
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Side Navigation Menu</title>
+<style>
+  /* Style for the side navigation menu */
+  .sidenav {
+    height: 100%;
+    width: 250px; /* adjust width as needed */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+  }
+
+  /* Style for the side navigation links */
+  .sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+  }
+
+  /* Change color on hover */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+</style>
+</head>
+<body>
+
+<div class="sidenav" id="mySidenav">
+  <a href="javascript:void(0)" onclick="closeNav()">Close</a>
+  <a href="index.html">Home</a>
+  <a href="destinations.html">Destination</a>
+  <a href="bestoffer.html">Best Offer</a>
+  <a href="sites.html">Our Site</a>
+  <a href="contactus.html">Contact</a>
+</div>
+
+<!-- Use any button/link to open the side navigation menu -->
+<span style="font-size:30px;cursor:pointer" onclick="openNav()"><a href="sidenav.html">☰</a></span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</body>
+</html>

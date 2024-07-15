@@ -1,0 +1,252 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Styles for the main header */
+.main-header {
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(to bottom, rgba(49, 96, 41, 0.5), rgba(19, 30, 7, 0.3)), url('../assets/travelpic.avif'); /* Background with gradient and image */
+    background-size: cover; /* Cover the entire area */
+    font-family: sans-serif; /* Font family */
+}
+
+    
+ .main-nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.menu a{
+     text-decoration: none;
+     color: white;
+     padding: 10px 20px;
+     font-size: 20px;
+     position: relative;
+     font-weight: 100;
+    
+}
+
+.register a{
+    text-decoration: none;
+     color: white;
+     padding: 10px 20px;
+     font-size: 20px;
+     background-color: brown;
+     border-radius: 8px;
+}
+
+.header-text{
+    /* max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 100px;
+    line-height: 50px;
+    font-size: larger;
+}
+.header-text span{
+letter-spacing: 5px;
+
+}
+.header-text a{
+text-decoration: none;
+background: rgb(169, 93, 93);
+color: white;
+padding:10px 20px;
+letter-spacing: 5px;
+}
+.menu a,
+.register a {
+position: relative;
+display: inline-block;
+color: white;
+text-decoration: none;
+overflow: hidden;
+}
+
+/* Pseudo element styles for menu and register links */
+.menu a::before,
+.register a::before {
+    content: ''; /* Empty content */
+    position: absolute; /* Position absolute */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: rgba(6, 6, 6, 0.5); /* Initial background color with some transparency */
+    z-index: -1; /* Behind the text */
+    transform: scale(0); /* Initial scale */
+    transform-origin: center; /* Center of transformation */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Scale pseudo element on hover */
+.menu a:hover::before,
+.register a:hover::before {
+    transform: scale(2); /* Scale on hover */
+}
+
+/* Change text color on hover */
+.menu a:hover {
+    color: #f6f2f2; /* Change to your desired hover color */
+}
+
+/* Add pulsating animation for the text */
+@keyframes pulsate {
+    0% {
+        transform: scale(1); /* Initial scale */
+    }
+    50% {
+        transform: scale(1.1); /* Slightly larger scale */
+    }
+    100% {
+        transform: scale(1); /* Return to original scale */
+    }
+}
+
+/* Apply pulsating animation on hover */
+.menu a:hover,
+.register a:hover {
+    animation: pulsate 0.5s ease-in-out; /* Pulsate animation */
+}
+
+.main-card {
+        max-width: 400px;
+        margin-left:50rem ;
+        margin-top: 4rem;
+        padding: 20px;
+        background: transparent;
+        border: 1px solid white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-card h2 {
+        text-align: center;
+        color: #f1eeee;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 5px;
+        color: #f0ecec;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .form-group button {
+        background-color: rgb(151, 176, 62);
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 18px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .form-group button:hover {
+        background-color: #333;
+    }
+ 
+    /* @media screen and (max-width: 768px) {
+       section{
+            position: inherit;
+            display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: red;
+        }
+        section a{
+            display: block;
+            padding: 1.5rem;
+            font-size: 2rem;
+            margin: 1rem;
+            background-color: rgb(255, 185, 127);
+        }
+        
+      } */
+      .sidenav {
+        height: 100%;
+        width: 250px; /* adjust width as needed */
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #6a8838;
+        overflow-x: hidden;
+        /* padding-top: 60px; */
+        transition: width 0.5s ease;
+       
+      }
+    
+      /* Style for the side navigation links */
+      .sidenav a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #eef0f4;
+        display: block;
+      }
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      #link1{
+      
+            margin-right: 20px;
+            text-decoration: none;
+            color: rgb(242, 233, 233);
+            transition: transform 0.3s ease;
+            font-weight: bold;
+            background-color: rgb(73, 108, 22);
+      }
+    #link1:hover {
+            transform: translateY(-3px); /* You can adjust the value to change the amount of movement */
+            background-color: rgb(109, 29, 29);
+          }
+          #link2{
+      
+            margin-right: 20px;
+            text-decoration: none;
+            color: rgb(240, 234, 234);
+            transition: transform 0.3s ease;
+            font-weight: bold;
+            background-color: rgb(109, 29, 29);
+      }
+    #link2:hover {
+            transform: translateY(-3px); /* You can adjust the value to change the amount of movement */
+            background-color: rgb(83, 119, 29);
+          }
+      
